@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Main from "./pages/Main";
+import Aboult from "./pages/Aboult";
+import Knowledge from "./pages/Knowledge";
+import Projects from "./pages/Projects";
+import Extra from "./pages/Extra";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(props){
+    const [controlView, setControlView] = useState(0)
+    
+    
+
+    return(
+        <> 
+            <div className="screen">
+            <Main state={controlView} click={setControlView}/>
+            <Aboult state={controlView} click={setControlView}/>
+            <Knowledge state={controlView} click={setControlView}/>
+            <Projects state={controlView} click={setControlView}/>
+            <Extra state={controlView} click={setControlView}/>
+            </div>
+        </>
+    )
 }
 
-export default App;
+export default App
