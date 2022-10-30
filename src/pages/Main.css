@@ -32,18 +32,6 @@ li{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) ;
 }
 
-li:hover{
-    width: 200px;
-}
-
-li:hover svg.icon-inf{
-    transform: scale(0);
-}
-
-li:hover .text-info{
-    transform: scale(1);
-    color: var(--color1);
-}
 
 
 .text-info{
@@ -158,4 +146,18 @@ a{
         right: calc(25vw - 160px);
     }
 
+
+    li:hover{
+        width: 200px;
+    }
+    
+    li:hover svg.icon-inf{
+        transform: scale(0);
+    }
+    
+    li:hover .text-info{
+        transform: scale(1);
+        color: var(--color1);
+    }
+    
 }
