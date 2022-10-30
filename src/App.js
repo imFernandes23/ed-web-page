@@ -4,7 +4,7 @@ import Aboult from "./pages/Aboult";
 import Knowledge from "./pages/Knowledge";
 import Projects from "./pages/Projects";
 import Extra from "./pages/Extra";
-
+import * as AiIcons from 'react-icons/ai'
 
 function App(props){
     const [controlView, setControlView] = useState(0)
@@ -13,6 +13,12 @@ function App(props){
 
     return(
         <> 
+            <div className="help">
+                <AiIcons.AiOutlineQuestionCircle/>
+                <p className="hText"> Clique na cor de cada página para ve-la.</p>
+
+            </div>
+
             <div className="screen">
             <Main state={controlView} click={setControlView}/>
             <Aboult state={controlView} click={setControlView}/>

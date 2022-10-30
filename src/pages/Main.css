@@ -1,0 +1,161 @@
+
+h1{
+    font-family: var(--font1);
+    color: white;
+    position: absolute;
+}
+
+h2{
+    font-family: var(--font2);
+    color: white;
+    position: absolute;
+    font-size: 1em;
+}
+
+ul{ 
+    position: absolute;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+li{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) ;
+}
+
+li:hover{
+    width: 200px;
+}
+
+li:hover svg.icon-inf{
+    transform: scale(0);
+}
+
+li:hover .text-info{
+    transform: scale(1);
+    color: var(--color1);
+}
+
+
+.text-info{
+    width: 200px;
+    font-family: var(--font1);
+    color: black;
+    font-size: 1.1em;
+    transform: scale(0);
+    transition: .5s;
+    position: absolute;
+    margin-left:50px;
+}
+
+svg.icon-inf{
+    
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 1.9em;
+    transition: .5s;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (orientation: portrait) and (max-width:500px){
+    .avatar{
+        position: absolute;
+        width: 180px;
+        border-radius: 50%;
+        border: 5px solid white;
+        top: 10vh;
+        left: 20px;
+    }
+
+    .style-element{
+        width: 5px;
+        position: absolute;
+        height: 60vh;
+        background-color: white;
+        top:calc(10vh + 90px);
+        left: 20px;
+
+    }
+
+    h1{
+        top: calc(10vh + 190px);
+        left: 40px;
+        font-size: 2.3em;
+    }
+
+    h2{
+        top: calc(10vh + 230px);
+        left: 40px;
+    }
+
+    ul{
+        flex-direction: column;
+        top: calc(10vh + 290px);
+        left: 40px;
+    }
+    
+    .text-info{
+        transform: scale(1);
+        left: 20px;
+        color: white;
+    }
+
+
+
+}
+
+@media (min-width:500px){
+    .avatar{
+        position: absolute;
+        width: 260px;
+        border-radius: 50%;
+        border: 10px solid white;
+        top: 15vh;
+        left: 40px;
+    }
+
+    .style-element{
+        width: 75vw;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+        top: calc(15vh + 250px);
+        left: calc(40px + 125px);
+    }
+
+    h1{
+        font-size: 4em;
+        top:28vh;
+        left: 310px;
+    }
+
+    h2{
+        font-size: 1.5em;
+        top: 35vh;
+        left: 310px;
+    }
+
+    ul{
+        top: 45vh;
+        right: calc(25vw - 160px);
+    }
+
+}

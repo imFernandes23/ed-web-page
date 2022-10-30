@@ -4,7 +4,9 @@ function Knowledge(props) {
 
     return(
         <div className={props.state > 2 ? 'page' : 'page active'} onClick={() =>  props.click(2)}>
+            <div className={props.state === 2 ? 'content active' : 'content'}>
 
+</div>
         </div>
     )
 }
