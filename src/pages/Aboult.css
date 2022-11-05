@@ -1,0 +1,8 @@
+.aboult-title{
+   position: absolute;
+   top: 50px;
+   left: 5vw;
+}
+
+@media (orientation: portrait) and (max-width:600px){}
+@media (min-width:600px){}

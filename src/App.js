@@ -15,7 +15,7 @@ function App(props){
         <> 
             <div className="help">
                 <AiIcons.AiOutlineQuestionCircle/>
-                <p className="hText"> Clique na cor de cada página para ve-la.</p>
+                <p className="hText"> Clique na cor de cada página para interagir com ela.</p>
 
             </div>
 

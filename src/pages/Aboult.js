@@ -1,4 +1,5 @@
 import React from "react";
+import './Aboult.css'
 
 function Aboult(props){
 
@@ -6,8 +7,8 @@ function Aboult(props){
         <div className={props.state > 1 ? 'page' : 'page active'} onClick={() =>  props.click(1)}>
             <div className={props.state === 1 ? 'content active' : 'content'}>
 
-</div>
-
+            <h1 className="aboult-title">Um pouco sobre mim</h1>
+        </div>
         </div>  
     )
 }
