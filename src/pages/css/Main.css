@@ -1,13 +1,13 @@
 
 h1{
     font-family: var(--font1);
-    color: white;
+    color: var(--color5);
     position: absolute;
 }
 
 h2{
     font-family: var(--font2);
-    color: white;
+    color: var(--color5);
     position: absolute;
     font-size: 1em;
 }
@@ -24,7 +24,7 @@ li{
     height: 60px;
     overflow: hidden;
     display: flex;
-    background-color: white;
+    background-color: var(--color5);
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,7 @@ a{
         position: absolute;
         width: 180px;
         border-radius: 50%;
-        border: 5px solid white;
+        border: 5px solid var(--color5);
         top: 10vh;
         left: 20px;
     }
@@ -77,7 +77,7 @@ a{
         width: 5px;
         position: absolute;
         height:100vh;
-        background-color: white;
+        background-color: var(--color5);
         top:calc(10vh + 90px);
         left: 20px;
 
@@ -103,7 +103,6 @@ a{
     .text-info{
         transform: scale(1);
         left: 20px;
-        color: white;
     }
 
 
@@ -115,7 +114,7 @@ a{
         position: absolute;
         width: 260px;
         border-radius: 50%;
-        border: 10px solid white;
+        border: 10px solid var(--color5);
         top: 17vh;
         left: 40px;
     }
@@ -123,7 +122,7 @@ a{
     .style-element{
         width: 100vw;
         height: 10px;
-        background-color: white;
+        background-color: var(--color5);
         position: absolute;
         top: calc(17vh + 250px);
         left: calc(40px + 125px);

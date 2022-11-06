@@ -1,0 +1,120 @@
+@media (orientation: portrait) and (max-width:630px){
+    .card-colored{
+        position: absolute;
+        width: 320px;
+        height: 500px;
+        left: 50vw;
+        top: 50vh;
+        transform: translateY(-50%) translateX(-50%);
+        border-radius: 30px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border: 2px solid black;
+    }
+    .card-title-colored{
+        color: black;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 1.3em;
+        font-family: var(--font1);
+    }
+    
+    .card-text-colored{
+        position: absolute;
+        top: 70px;
+        color: black;
+        font-size: 16px;
+        font-family: var(--font2);
+        text-align: center;
+        width: 300px;
+
+    }
+
+    .icon-card{
+        position: absolute;
+        font-size: 2.5em;
+        right: 20px;
+        top: 20px;
+        color: black
+    }
+
+
+    .color-drop{
+        overflow: hidden;
+        position: absolute;
+        background-color: var(--MainColor);
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+        clip-path: circle(10px at var(--PosiX) 90%);
+
+    }
+
+    .color-drop.active{
+        clip-path: circle(100vh);
+        z-index: 100;
+    }
+    
+
+}
+
+@media (min-width:630px){
+    .card-colored{
+        position: absolute;
+        width: 448px;
+        height: 700px;
+        left: 50vw;
+        top: 50vh;
+        transform: translateY(-50%) translateX(-50%);
+        border-radius: 30px;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border: 2px solid black;
+    }
+    .card-title-colored{
+        color: black;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 1.8em;
+        font-family: var(--font1);
+    }
+    
+    .card-text-colored{
+        position: absolute;
+        top: 100px;
+        color: black;
+        font-size: 20px;
+        font-family: var(--font2);
+        text-align: center;
+        width: 388px;
+
+    }
+
+    .icon-card{
+        position: absolute;
+        font-size: 4.5em;
+        right: 20px;
+        top: 20px;
+        color: black
+    }
+
+
+    .color-drop{
+        overflow: hidden;
+        position: absolute;
+        background-color: var(--MainColor);
+        width: 100%;
+        height: 100%;
+        transition: 1.5s;
+        clip-path: circle(10px at var(--PosiX2) 90%);
+
+    }
+
+    .color-drop.active{
+        clip-path: circle(200vw at var(--PosiX) var(--PosiX));
+        z-index: 100;
+    }
+    
+}

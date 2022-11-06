@@ -9,11 +9,11 @@
 }
 
 :root{
-  --color1:rgba(95, 33, 204, 1);
-  --color2: rgba(113, 39, 242, 1); 
-  --color3: rgba(106, 36, 230, 1);
-  --color4: rgba(78, 27, 166, 1);
-  --color5: rgba(48, 16, 102, 1);
+  --color1: #CECEDB;
+  --color2: #C2C2CF; 
+  --color3: #AAAAB5;
+  --color4: #86868F;
+  --color5: #4A4A4F;
   --font1: 'Roboto', sans-serif;
   --font2: 'Source Sans Pro', sans-serif;
 }

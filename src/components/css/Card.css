@@ -1,0 +1,71 @@
+@media (orientation: portrait) and (max-width:630px){
+    .card{
+        position: absolute;
+        width: 320px;
+        height: 500px;
+        left: 50vw;
+        top: 50vh;
+        transform: translateY(-50%) translateX(-50%);
+        border-radius: 30px;
+        padding: 10px;
+        border: 2px solid transparent;
+        background: linear-gradient(145deg,  #afafba, #d0d0dd);
+        box-shadow:  14px 14px 26px #a5a5b0,
+             -14px -14px 26px #dfdfee;
+    }
+    .card-title{
+        color: var(--color5);
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 1.3em;
+        font-family: var(--font1);
+    }
+    
+    .card-text{
+        position: absolute;
+        top: 70px;
+        color: var(--color5);
+        font-size: 16px;
+        font-family: var(--font2);
+        text-align: center;
+        width: 300px;
+
+    }
+}
+
+@media (min-width:630px){
+        .card{
+        position: absolute;
+        width: 448px;
+        height: 700px;
+        left: 50vw;
+        top: 50vh;
+        transform: translateY(-50%) translateX(-50%);
+        border-radius: 30px;
+        padding: 30px;
+        border: 2px solid transparent;
+        background: linear-gradient(145deg,  #afafba, #d0d0dd);
+        box-shadow:  14px 14px 26px #a5a5b0,
+             -14px -14px 26px #dfdfee;
+    }
+    .card-title{
+        color: var(--color5);
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 1.8em;
+        font-family: var(--font1);
+    }
+    
+    .card-text{
+        position: absolute;
+        top: 100px;
+        color: var(--color5);
+        font-size: 20px;
+        font-family: var(--font2);
+        text-align: center;
+        width: 388px;
+
+    }
+}

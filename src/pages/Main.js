@@ -1,5 +1,5 @@
 import React from "react";
-import './Main.css'
+import './css/Main.css'
 import * as AiIcons from 'react-icons/ai'
 
 function Main(props) {
