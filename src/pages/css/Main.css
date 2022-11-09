@@ -2,18 +2,18 @@
 h1{
     font-family: var(--font1);
     color: var(--color5);
-    position: absolute;
+    
 }
 
 h2{
     font-family: var(--font2);
     color: var(--color5);
-    position: absolute;
+
     font-size: 1em;
 }
 
 ul{ 
-    position: absolute;
+
     display: flex;
     list-style: none;
     gap: 20px;
@@ -87,17 +87,20 @@ a{
         top: calc(10vh + 190px);
         left: 40px;
         font-size: 2.3em;
+        position: absolute;
     }
 
     h2{
         top: calc(10vh + 230px);
         left: 40px;
+        position: absolute;
     }
 
     ul{
         flex-direction: column;
         top: calc(10vh + 290px);
         left: 40px;
+        position: absolute;
     }
     
     .text-info{
@@ -116,8 +119,9 @@ a{
         border-radius: 50%;
         border: 10px solid var(--color5);
         top: 17vh;
-        left: 40px;
+        left: 30px;
     }
+
 
     .style-element{
         width: 100vw;
@@ -125,24 +129,28 @@ a{
         background-color: var(--color5);
         position: absolute;
         top: calc(17vh + 250px);
-        left: calc(40px + 125px);
+        left: calc(30px + 125px);
     }
 
     h1{
         font-size: 4em;
-        bottom: 65vh;
-        left: 310px;
+        bottom: calc(83vh - 200px);
+        left: 300px;
+        position: absolute;
+
     }
 
     h2{
-        font-size: 1.5em;
-        top: 35vh;
-        left: 310px;
+        font-size: 1.4em;
+        top: calc(17vh + 200px);
+        left: 300px;
+        position: absolute;
     }
 
     ul{
-        top: 45vh;
+        top: calc(17vh + 280px);
         right: 10vw;
+        position: absolute;
     }
 
 

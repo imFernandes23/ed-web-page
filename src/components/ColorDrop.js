@@ -11,14 +11,12 @@ return(
 
 
         <div className="card-colored">
-                <h2 className="card-title-colored">Um pouco sobre mim</h2>
+                <h2 className="card-title-colored">{props.cardTitle}</h2>
                 
                 <span className="icon-card">{props.icon}</span>
 
                 <p className="card-text-colored">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt magni tempora! Perspiciatis doloremque, natus harum molestiae officia corrupti obcaecati, repellat pariatur consectetur dolor voluptatum, at repudiandae eveniet! Ducimus, amet.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt magni tempora! Perspiciatis doloremque, natus harum molestiae officia corrupti obcaecati, repellat pariatur consectetur dolor voluptatum, at repudiandae eveniet! Ducimus, amet.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt magni tempora! Perspiciatis doloremque, natus harum molestiae officia corrupti obcaecati, repellat pariatur consectetur dolor voluptatum, at repudiandae eveniet! Ducimus, amet.
+                {props.cardText}
                 </p>
             </div>
     </div>

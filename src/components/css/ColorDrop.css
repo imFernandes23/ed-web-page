@@ -15,7 +15,7 @@
         color: black;
         position: absolute;
         top: 20px;
-        left: 30px;
+        left: 20px;
         font-size: 1.3em;
         font-family: var(--font1);
     }
@@ -29,6 +29,14 @@
         text-align: center;
         width: 300px;
 
+    }
+
+    .color-drop.active::before{
+        clip-path: circle(40vh at 0 100%);
+    }
+
+    .color-drop.active::after{
+        clip-path: circle(20vh at 100% 0);
     }
 
     .icon-card{
@@ -51,6 +59,27 @@
 
     }
 
+    .color-drop::before{
+        content: '';
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        height: 100%;
+        clip-path: circle(10px at 0 100%);
+        transition: 2s;
+    }
+
+    .color-drop::after{
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        clip-path: circle(10px at 100% 0);
+        transition: 2s;
+    }
+
+
     .color-drop.active{
         clip-path: circle(100vh);
         z-index: 100;
@@ -62,12 +91,12 @@
 @media (min-width:630px){
     .card-colored{
         position: absolute;
-        width: 448px;
-        height: 700px;
+        width: 45vh;
+        height: 75vh;
         left: 50vw;
-        top: 50vh;
+        top: 45vh;
         transform: translateY(-50%) translateX(-50%);
-        border-radius: 30px;
+        border-radius: 20px;
         padding: 30px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         border: 2px solid black;
@@ -76,7 +105,8 @@
         color: black;
         position: absolute;
         top: 20px;
-        left: 30px;
+        left: 20px;
+        width: 70%;
         font-size: 1.8em;
         font-family: var(--font1);
     }
@@ -89,6 +119,10 @@
         font-family: var(--font2);
         text-align: center;
         width: 388px;
+        width: 40vh;
+        height: calc(75vh - 120px);
+        overflow-y: scroll;
+        padding: 2px;
 
     }
 
@@ -112,9 +146,50 @@
 
     }
 
+    .color-drop::before{
+        content: '';
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        height: 100%;
+        clip-path: circle(10px at 0 100%);
+        transition: 2s;
+    }
+
+    .color-drop::after{
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        clip-path: circle(10px at 100% 0);
+        transition: 2s;
+    }
+
     .color-drop.active{
         clip-path: circle(200vw at var(--PosiX) var(--PosiX));
         z-index: 100;
     }
     
+    .color-drop.active::before{
+        clip-path: circle(50vw at 0 100%);
+    }
+
+    .color-drop.active::after{
+        clip-path: circle(30vw at 100% 0);
+    }
+
+
+
+    .card-text-colored::-webkit-scrollbar{
+        width: 5px;
+    }
+
+    .card-text-colored::-webkit-scrollbar-thumb{
+        width: 10px;
+        background-color: black;
+        position: absolute;
+        border-radius: 5px;
+    }
+
 }
