@@ -58,7 +58,7 @@ function Aboult(props){
                 posiX={'80%'} posiX2={'57.5%'}
                 cardTitle={'Scikit-learn e Pandas'}
                 cardText={<p>
-                    Um assunto que também me motivou bastante a me aprimorar em python foi a possibilidade de criar sistemas inteligentes, como o curso de engenharia conta com uma base bastante sólida em cálculo e probabilidade e estatística, adicionar alguns algoritmos de aprendizado de máquina não foi uma tarefa difícil. 
+                    Um assunto que também me motivou bastante a me aprimorar em python foi a possibilidade de criar sistemas inteligentes, como o curso de engenharia conta com uma base bastante sólida em cálculo e probabilidade e estatística, adicionar alguns algoritmos de aprendizado de máquina na caixa de ferramentas não foi uma tarefa difícil. 
                     <br/>
                     Aprendizado de máquina se tornou tema de algumas pesquisas pessoais, e as ferramentas Pandas, Scikit-learn e mais atualmente Tensor-Flow sempre geram bastante interesse e em breve projetos com essas ferramentas estarão disponíveis. 
                 </p>}
