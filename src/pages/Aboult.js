@@ -18,7 +18,7 @@ function Aboult(props){
             <div className={props.state === 1 ? 'content active' : 'content'}>
             <Card/>
             <ColorDrop 
-                color={'#EBE55A'} 
+                color={'#FFF39C'} 
                 icon={<SiIcons.SiJavascript/>} 
                 posiX={'20%'} posiX2={'42.5%'}
                 cardTitle={'Desenvolvimento Web'}
@@ -29,7 +29,7 @@ function Aboult(props){
                 </p>}    
                 />
             <ColorDrop 
-                color={'#3D92CB'} 
+                color={'#82A7FA'} 
                 icon={<FaIcons.FaReact/>} 
                 posiX={'40%'} posiX2={'47.5%'}
                 cardTitle={'React.js'}
@@ -42,7 +42,7 @@ function Aboult(props){
                 </p>}
                 />
             <ColorDrop
-                color={'#7127F2'} 
+                color={'#BB93FA'} 
                 icon={<FaIcons.FaPython/>} 
                 posiX={'60%'} posiX2={'52.5%'}
                 cardTitle={'Python'}
@@ -53,7 +53,7 @@ function Aboult(props){
                 </p>}
                 />
             <ColorDrop 
-                color={'#DE6B57'} 
+                color={'#DE945D'} 
                 icon={<AiIcons.AiOutlineDatabase/>} 
                 posiX={'80%'} posiX2={'57.5%'}
                 cardTitle={'Scikit-learn e Pandas'}

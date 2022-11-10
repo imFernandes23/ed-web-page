@@ -62,7 +62,7 @@
     .color-drop::before{
         content: '';
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.2);
         width: 100%;
         height: 100%;
         clip-path: circle(10px at 0 100%);

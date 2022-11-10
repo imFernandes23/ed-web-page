@@ -7,7 +7,7 @@ import Extra from "./pages/Extra";
 import * as AiIcons from 'react-icons/ai'
 
 function App(props){
-    const [controlView, setControlView] = useState(1)
+    const [controlView, setControlView] = useState(0)
     
     
 
