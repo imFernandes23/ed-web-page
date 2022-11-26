@@ -5,7 +5,7 @@ import * as AiIcons from 'react-icons/ai'
 function Main(props) {
 
     return(
-        <div className={props.state === 0 ? 'page active' : 'page'} onClick={() =>  props.click(0)}  >
+        <div className={props.state === 0 ? 'main page active' : 'main page'} onClick={() =>  props.click(0)}  >
             <div className={props.state === 0 ? 'content active' : 'content'}>
 
                 <img src={require('../assets/avatar.png')} className='avatar'/>

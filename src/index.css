@@ -32,6 +32,9 @@
   position: absolute;
   transition: 1s;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 

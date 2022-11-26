@@ -1,0 +1,21 @@
+
+@media (orientation: portrait) and (max-width:630px){
+    .knowledge > .content{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 90%;
+        height: fit-content;
+        max-height: 90%;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+    
+}
+
+@media (min-width:630px){
+    
+}
+

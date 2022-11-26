@@ -7,7 +7,7 @@ import Extra from "./pages/Extra";
 import * as AiIcons from 'react-icons/ai'
 
 function App(props){
-    const [controlView, setControlView] = useState(0)
+    const [controlView, setControlView] = useState(2)
     
     
 
@@ -20,7 +20,7 @@ function App(props){
             </div>
 
             <div className="screen">
-            <Main state={controlView} click={setControlView}/>
+            <Main state={controlView} click={setControlView} className='main'/>
             <Aboult state={controlView} click={setControlView}/>
             <Knowledge state={controlView} click={setControlView}/>
             <Projects state={controlView} click={setControlView}/>
