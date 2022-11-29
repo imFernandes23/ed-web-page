@@ -8,13 +8,12 @@ function Knowledge(props) {
         <div className={props.state > 2 ? 'knowledge page' : 'knowledge page active'} onClick={() =>  props.click(2)}>
             <div className={props.state === 2 ? 'content active' : 'content'}>
 
-                <CircularCard/>
-                <CircularCard/>
-                <CircularCard/>
-                <CircularCard/>
-                <CircularCard/>
-                <CircularCard/>
-
+                <CircularCard Xposi={0} Yposi={0}/>
+                <CircularCard Xposi={1} Yposi={1}/>
+                <CircularCard Xposi={0} Yposi={2}/>
+                <CircularCard Xposi={1} Yposi={0}/>
+                <CircularCard Xposi={0} Yposi={1}/>
+                <CircularCard Xposi={1} Yposi={2}/>
 
             </div>
         </div>

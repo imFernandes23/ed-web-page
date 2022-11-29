@@ -3,14 +3,15 @@
     .knowledge > .content{
         display: flex;
         flex-wrap: wrap;
-        row-gap: 20px;
-        column-gap: 20px;
+        row-gap: 10px;
+        column-gap: 10px;
         width: 90%;
         height: fit-content;
         max-height: 90%;
         align-items: center;
         justify-content: center;
         overflow-y: scroll;
+        transition: .5s;
     }
     
 }
