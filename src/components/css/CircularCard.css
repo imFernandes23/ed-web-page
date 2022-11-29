@@ -13,23 +13,74 @@
 
     }
 
-    .content-card{
+    .button{
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 150px;
-        height: 200px;
+        height: 150px;
+        border-radius: 50%;
         background-color: var(--color3);
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         transition: .5s;
     }
 
-    .circular-card.active .content-card{
-        position: fixed;
-        left: 20px;
-        top:20px;
+    .button.active{
+        scale: 0.5;
+    }
+
+    .button.active svg:nth-child(1) circle{
+        stroke: var(--MainColor);
+    }
+
+    .button.active svg:nth-child(2){
+        color: var(--MainColor);
     }
 
 
+    .button svg{
+        position: relative;
+        width: 130px;
+        height: 130px;
+        overflow: visible;
+    }
+
+    .button svg:nth-child(1) circle {
+        width: 100%;
+        height: 100%;
+        fill: transparent;
+        stroke-width: 4;
+        stroke: var(--color5);
+        transition: .5s;
+    }
+
+   .button svg:nth-child(2){
+    position: absolute;
+    color: var(--color5);
+    transition: .5s;
+   } 
+
+   .full-card{
+    position: fixed;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    transition: .5s;
+    scale: 0;
+    visibility: hidden;
+    z-index: 100;
+   }
+
+   .full-card.active {
+    position: fixed;
+    scale: 1;
+    left: calc(50vw - 170px);
+    top: calc(50vh - 350px);
+    visibility: visible;
+    z-index: 100;
+   }
 
 }
 

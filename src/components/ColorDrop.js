@@ -15,9 +15,8 @@ return(
                 
                 <span className="icon-card">{props.icon}</span>
 
-                <p className="card-text-colored">
+
                 {props.cardText}
-                </p>
             </div>
     </div>
 )
