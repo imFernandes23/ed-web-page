@@ -27,15 +27,7 @@
     }
 
     .button.active{
-        scale: 0.5;
-    }
-
-    .button.active svg:nth-child(1) circle{
-        stroke: var(--MainColor);
-    }
-
-    .button.active svg:nth-child(2){
-        color: var(--MainColor);
+        scale: 0.8;
     }
 
 
