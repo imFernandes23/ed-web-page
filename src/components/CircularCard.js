@@ -31,6 +31,15 @@ export default function CircularCard(props){
 
             <div className={ isOpen ? 'full-card active' : 'full-card'} onClick={() => setIsOpen(!isOpen)}>
 
+                <div className="bar-vert-icon">
+
+                </div>
+                <div className="card-itens-list">
+                </div>
+                <div className="percent">
+                    
+                </div>
+
             </div>
 
 

@@ -65,7 +65,6 @@
     position: fixed;
     width: 300px;
     height: 450px;
-    background-color: white;
     border-radius: 20px;
     transition: .5s;
     scale: 0;
@@ -76,11 +75,93 @@
    .full-card.active {
     position: fixed;
     scale: 1;
-    left: calc(50vw - 170px);
+    left: calc(50vw - 150px);
     top: calc(50vh - 350px);
     visibility: visible;
     z-index: 100;
    }
+    
+    .bar-vert-icon{
+    position: absolute;
+    width: 200px;
+    left: 5px;
+    top: 25px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: var(--color5);
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+   }
+
+    .full-card.active .card-itens-list{
+    width: 90px;
+    height: 300px;
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    background-color: var(--color4);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    animation: listAnime 2s ease 1s forwards;    
+    color: transparent;
+   }
+
+   @keyframes listAnime {
+    0%{
+        left: 100px;
+        z-index: -1;
+        width: 90px;
+        color: transparent;
+    }
+    25%{
+        left: 230px;
+        z-index: -1;
+        width: 90px;
+        color: transparent;
+    }
+    65%{
+        left: 100px;
+        z-index: 1;
+        width: 90px;
+        color: transparent;
+    }
+    90%{
+        left: 100px;
+        width: 200px;
+        z-index: 1;
+        color: transparent;
+    }100%
+    {
+        left: 100px;
+        width: 200px;
+        z-index: 1;
+        color: var(--color5);
+    }
+   }
+
+   .full-card.active .percent{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background-color: var(--color4);
+    border-radius: 50%;
+    left: -50px;
+    top: -30px;
+    scale: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: percentIn 1s ease 1s forwards;
+    }
+
+    @keyframes percentIn {
+        0%{
+            scale: 0;
+        }
+        100%{
+            scale: 1;
+        }
+    }
+
 
 }
 
