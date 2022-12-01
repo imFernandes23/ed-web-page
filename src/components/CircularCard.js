@@ -1,5 +1,6 @@
 import React ,{useState, useRef} from "react";
-import './css/CircularCard.css'
+import './css/CircularCardPort.css'
+import './css/CircularCardLand.css'
 import OutSideClick from "../hooks/OutsideClick";
 import * as DiIcons from 'react-icons/di'
 
@@ -7,36 +8,46 @@ import * as DiIcons from 'react-icons/di'
 export default function CircularCard(props){
     const [isOpen, setIsOpen] = useState(false)
     const Ref = useRef(null)
-    const close = () => setIsOpen(false)
 
-    OutSideClick(Ref, isOpen, close)
+    
 
     //Elements props
     const icon = props.icon
     const color = props.color
     const percent = props.percent
-    const wave100 = 'M 0 400 L 0 400 L 0 50 C 50 0 50 100 100 50 C 150 0 150 100 200 50 L 200 400 L 0 400'
-    const wave0 = 'M 0 400 L 0 400 L 0 350 C 50 300 50 400 100 350 C 150 300 150 400 200 350 L 200 400 L 0 400 '
-    const waveStyle1 = `path('${wave0}')`
+    const title = props.title
+    const itens = props.itens
+    const itsVisible = props.itsVisible
+
+    const screenFocus = () => {
+        setIsOpen(true)
+        props.setItsVisible(0)
+    }
+
+    const close = () => {
+        setIsOpen(false)
+        props.setItsVisible(1)
+    }
 
 
+    OutSideClick(Ref, isOpen, close)
 
     return(
         
 
         <div ref={Ref} className='circular-card active'>
-            <div className={!isOpen ? 'button ' : 'button active'} onClick={() => setIsOpen(!isOpen)} >
+            <div className={itsVisible ? 'button ' : 'button active'} onClick={() => {screenFocus()}} >
                 <svg >
                     <circle cx={65} cy={65} r={65}></circle>
                 </svg>
 
-                {icon}   
+                {icon} 
 
             </div> 
 
-            <div className={ isOpen ? 'full-card active' : 'full-card'} onClick={() => setIsOpen(!isOpen)}>
+            <div className={ isOpen ? 'full-card active' : 'full-card'} onClick={() => {close()}}>
 
-                <div className="bar-vert-icon"  style={{'--MainColor':color , '--Percent': percent, '--Wave1' : waveStyle1 }}>
+                <div className="bar-vert-icon"  style={{'--MainColor':color , '--Percent': percent}}>
                     {icon}
 
                     <div className="wave1" >
@@ -45,6 +56,10 @@ export default function CircularCard(props){
 
                 </div>
                 <div className="card-itens-list">
+                    <h1>{title}</h1>
+                    <ul className="item-list">
+                        {itens.map((item) => <li>{item}</li>)}
+                    </ul>
                 </div>
 
 

@@ -27,7 +27,7 @@
     }
 
     .button.active{
-        scale: 0.8;
+        scale: 0;
     }
 
 
@@ -97,15 +97,27 @@
         color: rgba(255, 255, 255, 0.1)
    }
 
-   .bar-vert-icon .wave1{
+    .full-card.active .bar-vert-icon .wave1{
     width: 100%;
-    height: 100%;
+    position: absolute;
+    bottom: 0;
     background-color: var(--MainColor);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    clip-path: var(--Wave1);
+    height: 0px;
+    animation: barVertIn 2s ease 2s forwards  ;
+   }
+
+   @keyframes barVertIn {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: calc(400px * var(--Percent) / 100);
+    }
+    
    }
 
    .bar-vert-icon .wave1 svg {
@@ -121,6 +133,9 @@
     width: 90px;
     height: 300px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 75px;
     left: 100px;
     background-color: var(--color4);
@@ -128,7 +143,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     z-index: -1;
     animation: listAnime 2s ease 1s forwards;    
-    color: transparent;
+
    }
 
    @keyframes listAnime {
@@ -136,25 +151,25 @@
         left: 100px;
         z-index: -1;
         width: 90px;
-        color: transparent;
+
     }
     25%{
         left: 230px;
         z-index: -1;
         width: 90px;
-        color: transparent;
+
     }
     65%{
         left: 100px;
         z-index: 1;
         width: 90px;
-        color: transparent;
+
     }
     90%{
         left: 100px;
         width: 200px;
         z-index: 1;
-        color: transparent;
+
     }100%
     {
         left: 100px;
@@ -163,6 +178,37 @@
         color: var(--color5);
     }
    }
+
+   .full-card.active .card-itens-list h1{
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    left: 0;
+    animation: circleIn 1s ease 4s forwards;
+
+}
+
+.full-card.active .card-itens-list .item-list{
+    position: absolute;
+    height: 250px;
+    width: 180px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: var(--font1);
+    color: white;
+    opacity: 0;
+    top:50px;
+    list-style: none;
+    left: 15px;
+    animation: circleIn 1s ease 4s forwards;
+}
+
 
    /* Percent Config */
 
@@ -269,6 +315,3 @@
 
 }
 
-@media (min-width:630px){
-
-}

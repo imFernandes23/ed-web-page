@@ -12,14 +12,14 @@ h2{
     font-size: 1em;
 }
 
-ul{ 
+.main-list{ 
 
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-li{
+.main-list li{
     width: 60px;
     height: 60px;
     overflow: hidden;
@@ -96,7 +96,7 @@ a{
         position: absolute;
     }
 
-    ul{
+    .main-list{
         flex-direction: column;
         top: calc(10vh + 290px);
         left: 40px;
@@ -147,22 +147,22 @@ a{
         position: absolute;
     }
 
-    ul{
+    .main-list{
         top: calc(17vh + 280px);
         right: 10vw;
         position: absolute;
     }
 
 
-    li:hover{
+    .main-list li:hover{
         width: 200px;
     }
     
-    li:hover svg.icon-inf{
+    .main-list li:hover svg.icon-inf{
         transform: scale(0);
     }
     
-    li:hover .text-info{
+    .main li:hover .text-info{
         transform: scale(1);
         color: var(--color1);
     }

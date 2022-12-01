@@ -13,7 +13,7 @@ function Main(props) {
                 <h2>Desenvolvedor Front-end e python.</h2>
                 <span className="style-element"></span>
                 
-                <ul>
+                <ul className="main-list">
                     <li>
                         <a href="https://github.com/imFernandes23" target="_blank" className="link-button"><AiIcons.AiFillGithub className="icon-inf"/> <p className="text-info">Visitar repositório.</p></a>
                     </li>
