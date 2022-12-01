@@ -19,8 +19,7 @@
         row-gap: 10px;
         column-gap: 10px;
         width: 90%;
-        height: fit-content;
-        max-height: 90%;
+        height: 85%;
         align-items: center;
         justify-content: center;
         overflow-y: scroll;
