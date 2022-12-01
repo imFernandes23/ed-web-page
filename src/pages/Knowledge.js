@@ -2,6 +2,8 @@ import React,{useState} from "react";
 import CircularCard from "../components/CircularCard";
 import './css/Knowledge.css'
 import * as DiIcons from 'react-icons/di'
+import * as TbIcons from 'react-icons/tb'
+import * as RiIcons from 'react-icons/ri'
 
 function Knowledge(props) {
     const [itsVisible, setItsVisible] = useState(true)
@@ -12,55 +14,55 @@ function Knowledge(props) {
 
                 <CircularCard 
                     icon={<DiIcons.DiReact/> } 
-                    color={'#00EEF2'} 
-                    percent={85} 
+                    color={'#61dafb'} 
+                    percent={70} 
                     title={'React.js'}
-                    itens={['item1', 'item2','item3', 'item4', 'item5', 'item6', 'item7']}
+                    itens={['- Hooks', '- Functional Components','- Lifecycle', '- Props', '- State', '- Geocoding', '- JSX']}
                     itsVisible={itsVisible}
                     setItsVisible={setItsVisible}
                     />
                 <CircularCard 
-                    icon={<DiIcons.DiReact/> } 
-                    color={'#00EEF2'} 
-                    percent={85} 
-                    title={'React.js'}
-                    itens={['item1', 'item2','item3', 'item4', 'item5', 'item6', 'item7']}
+                    icon={<TbIcons.TbBrandHtml5/>} 
+                    color={'#F08E17'} 
+                    percent={80} 
+                    title={'HTML 5'}
+                    itens={['- HTML Semântico', '- Fomulários','- Componentes dinâmicos', '- Listas']}
                     itsVisible={itsVisible}
                     setItsVisible={setItsVisible}
                     />
                 <CircularCard 
-                    icon={<DiIcons.DiReact/> } 
+                    icon={<TbIcons.TbBrandCss3/> } 
                     color={'#00EEF2'} 
                     percent={85} 
-                    title={'React.js'}
-                    itens={['item1', 'item2','item3', 'item4', 'item5', 'item6', 'item7']}
+                    title={'CSS 3'}
+                    itens={['- Keyframes', '- Resposive Layouts','- Media Queries', '- Transitions']}
                     itsVisible={itsVisible}
                     setItsVisible={setItsVisible}
                     />
                 <CircularCard 
-                    icon={<DiIcons.DiReact/> } 
-                    color={'#00EEF2'} 
-                    percent={85} 
-                    title={'React.js'}
-                    itens={['item1', 'item2','item3', 'item4', 'item5', 'item6', 'item7']}
+                    icon={<TbIcons.TbBrandJavascript/> } 
+                    color={'#E8EF22'} 
+                    percent={65} 
+                    title={'JavaScript'}
+                    itens={['- Requests', '- JSON','- DOM', '- APIs']}
                     itsVisible={itsVisible}
                     setItsVisible={setItsVisible}
                     />
                 <CircularCard 
-                    icon={<DiIcons.DiReact/> } 
-                    color={'#00EEF2'} 
+                    icon={<TbIcons.TbBrandPython/> } 
+                    color={'#9722EF'} 
                     percent={85} 
-                    title={'React.js'}
-                    itens={['item1', 'item2','item3', 'item4', 'item5', 'item6', 'item7']}
+                    title={'Python'}
+                    itens={['- Numpy', '- Matplotlib','- Pandas', '- Scikit-Learn', '- Keras', '- OpenCV']}
                     itsVisible={itsVisible}
                     setItsVisible={setItsVisible}
                     />
                 <CircularCard 
-                    icon={<DiIcons.DiReact/> } 
-                    color={'#00EEF2'} 
-                    percent={85} 
-                    title={'React.js'}
-                    itens={['item1', 'item2','item3', 'item4', 'item5', 'item6', 'item7']}
+                    icon={<RiIcons.RiEnglishInput/> } 
+                    color={'#EF4A22'} 
+                    percent={45} 
+                    title={'Inglês'}
+                    itens={['- Leitura', '- Interpretação']}
                     itsVisible={itsVisible}
                     setItsVisible={setItsVisible}
                     />

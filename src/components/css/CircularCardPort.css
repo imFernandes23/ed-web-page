@@ -51,6 +51,8 @@
     position: absolute;
     color: var(--color5);
     transition: .5s;
+    width: 100px;
+    height: 100px;
    } 
 
    .full-card{
@@ -192,6 +194,10 @@
 
 }
 
+.full-card .card-itens-list h1{
+    opacity: 0;
+}
+
 .full-card.active .card-itens-list .item-list{
     position: absolute;
     height: 250px;
@@ -208,6 +214,11 @@
     left: 15px;
     animation: circleIn 1s ease 4s forwards;
 }
+
+.card-itens-list .item-list{
+    opacity: 0;
+}
+
 
 
    /* Percent Config */

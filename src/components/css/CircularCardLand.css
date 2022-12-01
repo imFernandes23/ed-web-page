@@ -51,8 +51,8 @@
         }
     
        .button svg:nth-child(2){
-        width: 180px;
-        height: 180px;
+        width: 140px;
+        height: 140px;
         position: absolute;
         color: var(--color5);
         transition: .5s;
