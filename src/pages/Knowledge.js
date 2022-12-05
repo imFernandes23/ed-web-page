@@ -17,7 +17,7 @@ function Knowledge(props) {
                     color={'#61dafb'} 
                     percent={70} 
                     title={'React.js'}
-                    itens={['- Hooks', '- Functional Components','- Lifecycle', '- Props', '- State', '- Geocoding', '- JSX']}
+                    itens={['- Hooks', '- Functional Components','- Lifecycle', '- State', '- Geocoding', '- JSX']}
                     itsVisible={itsVisible}
                     setItsVisible={setItsVisible}
                     />
@@ -26,7 +26,7 @@ function Knowledge(props) {
                     color={'#F08E17'} 
                     percent={80} 
                     title={'HTML 5'}
-                    itens={['- HTML Semântico', '- Fomulários','- Componentes dinâmicos', '- Listas']}
+                    itens={['- HTML Semântico', '- Fomulários','- Componentes dinâmicos', '- Listas', '- Login', '- Landpage']}
                     itsVisible={itsVisible}
                     setItsVisible={setItsVisible}
                     />
@@ -60,7 +60,7 @@ function Knowledge(props) {
                 <CircularCard 
                     icon={<RiIcons.RiEnglishInput/> } 
                     color={'#EF4A22'} 
-                    percent={45} 
+                    percent={55} 
                     title={'Inglês'}
                     itens={['- Leitura', '- Interpretação']}
                     itsVisible={itsVisible}
